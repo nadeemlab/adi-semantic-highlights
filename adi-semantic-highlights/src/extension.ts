@@ -11,7 +11,7 @@ interface HyperReference {
 interface DefinitionCard {
   machineToken: string
   name: string
-  type: "entity" | "property"
+  type: 'entity' | 'property'
   definition: string
   href?: HyperReference
 }
@@ -96,7 +96,7 @@ class DefinitionsHoverProvider implements vscode.HoverProvider {
   }
 
   _wrapColor(color: string | null, text: string): string {
-    let _color = "#dddddd";
+    let _color = '#dddddd';
     if (color === 'class/entity green') {
       _color = '#4EC9B0';
     }
@@ -214,7 +214,7 @@ class SchemaLoader {
       const label: string = row.Label;
       entityTokens[label] = row.Name;
     }
-    this.workspaceState.update("entity tokens", entityTokens);
+    this.workspaceState.update('entity tokens', entityTokens);
 
     const propertyTokens: {[key: string]: string} = {};
     const rows2 = await db.all('SELECT * FROM reference_properties;');
@@ -222,7 +222,7 @@ class SchemaLoader {
       const label: string = row.Label;
       propertyTokens[label] = row.Name;
     }
-    this.workspaceState.update("property tokens", propertyTokens);
+    this.workspaceState.update('property tokens', propertyTokens);
 
     const fieldAliases: {[key: string]: string} = {};
     const rows6 = await db.all('SELECT * FROM reference_fields;');
@@ -233,14 +233,14 @@ class SchemaLoader {
         fieldAliases[row.Name] = entityTokens[row.Property];
       }
     }
-    this.workspaceState.update("field aliases", fieldAliases);
+    this.workspaceState.update('field aliases', fieldAliases);
 
     const tableAliases: {[key: string]: string} = {};
     const rows3 = await db.all('SELECT * FROM reference_tables;');
     for (const row of rows3) {
       tableAliases[row.Name] = entityTokens[row.Entity];
     }
-    this.workspaceState.update("table aliases", tableAliases);
+    this.workspaceState.update('table aliases', tableAliases);
 
     const labelLookup: {[key: string]: string} = {};
     const rows4 = await db.all('SELECT * FROM reference_entities;');
