@@ -116,8 +116,11 @@ class FieldsCompletionItemProvider implements vscode.CompletionItemProvider {
 
   provideCompletionItems(document: vscode.TextDocument, position: vscode.Position) {
     const items: vscode.CompletionItem[] = [];
-    for (const item of this.workspaceState.keys()) {
-      items.push(new vscode.CompletionItem(item, vscode.CompletionItemKind.Constant))
+    for (const item of definitionCards(this.workspaceState)) {
+      const value = this.workspaceState.get<DefinitionCard>(item);
+      if (typeof value !== 'undefined') {
+        items.push(new vscode.CompletionItem(value.machineToken, vscode.CompletionItemKind.Constant))
+      }
     }
     return items;
   }
@@ -254,7 +257,7 @@ class SchemaLoader {
   _clearDefinitionCards() {
     const keys = definitionCards(this.workspaceState);
     for (const key of keys) {
-      this.workspaceState.update(key, null);
+      this.workspaceState.update(key, undefined);
     }
   }
 }
