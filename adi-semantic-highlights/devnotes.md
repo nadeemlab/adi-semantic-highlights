@@ -1,5 +1,5 @@
 
-- verify current behaviors
+- [DONE] verify current behaviors
 - do completions
 - do lowercase normalization to support variations in case in observed tokens
 - also do camelcase normalization?
