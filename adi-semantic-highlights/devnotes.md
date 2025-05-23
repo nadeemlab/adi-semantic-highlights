@@ -1,6 +1,6 @@
 
 - [DONE] verify current behaviors
-- do completions
+- [DONE] do completions
 - do lowercase normalization to support variations in case in observed tokens
 - also do camelcase normalization?
 - handle some easy cases of pluralization
@@ -33,4 +33,14 @@ is (i) valued in Biospecimen entity, as partly reflected in the foreign table/ke
 Full support for this case should make extra-sure that the field is correctly picked out... possibly by consulting a prior token for the table name? Not sure if this is wise.
 
 * Something is wrong with case: "SHA256 hash" as field name. Never registered? Oh, only as completion. So field names weren't added as completions?
+
+
+
+Completion cases.
+
+- A partial word is typed.
+- A full word is typed.
+- A full word is typed plus a property-indicating character (only period?).
+- A full word is typed plus a property-indicating character (or space?) and a partial field word for that thing.
+- 
 

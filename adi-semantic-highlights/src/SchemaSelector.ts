@@ -17,18 +17,19 @@ export class SchemaSelector {
       canSelectFiles: true,
       canSelectFolders: true,
       canSelectMany: false,
-      title: 'Select a schema file (OWL/SQLite), or directory with TSV schema files',
+      title: 'Select a schema file (SQLite), or directory with TSV schema files',
       openLabel: 'Use this schema',
       defaultUri: defaultUri,
-      filters: {'OWL ontology': ['owl'], 'SQLite database': ['sqlite', 'db']}
+      filters: {'SQLite database': ['sqlite', 'db']}
     }
     const schemaFileUris = await vscode.window.showOpenDialog(openOptions);
     if (schemaFileUris) {
       const path = schemaFileUris[0].path;
       this.workspaceState.update(schemaPathVar, path)
-      vscode.window.showInformationMessage('Using definitions from schema file: ' + path);
+      vscode.window.showInformationMessage('Using definitions from schema file or directory: ' + path);
     }
-    await new SchemaLoader(this.workspaceState).loadSchema();
+    const loader = new SchemaLoader(this.workspaceState)
+    await loader.loadSchema();
   }
 
 }
