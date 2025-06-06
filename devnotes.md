@@ -1,11 +1,11 @@
 
 - [DONE] verify current behaviors
 - [DONE] do completions
-- do lowercase normalization to support variations in case in observed tokens
-- also do camelcase normalization?
-- handle some easy cases of pluralization
-- support owl
-- support local table files
+- [SKIP] do lowercase normalization to support variations in case in observed tokens
+- [SKIP] also do camelcase normalization?
+- [SKIP] handle some easy cases of pluralization
+- [DEFER] support owl
+- [DONE?] support local table files
 - in docs, mention easy access to specific ontology/model examples.
     - scstudies
     - template/toy example, illustrated custom defs from local table files

@@ -102,6 +102,10 @@ export class SchemaLoader {
           firstLine = false;
           continue;
         }
+        if (tableName == "entities") { console.log(row)}
+        if (row.length != parsed[0].length) {
+          continue;
+        }
         await db.run(`INSERT INTO reference_${tableName} VALUES ${blank} ;`, row);
       }
     }

@@ -3,6 +3,9 @@ import * as vscode from 'vscode';
 import { DefinitionCard, definitionCard, definitionCards } from './types';
 
 export class DefinitionsHoverProvider implements vscode.HoverProvider {
+  /**
+   * Identifies registered words (in machine-tokenizable format, )
+   */
   workspaceState: vscode.Memento
 
   constructor(workspaceState: vscode.Memento) {
