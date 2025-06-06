@@ -21,3 +21,10 @@ java -jar target/owlextract-0.1-jar-with-dependencies.jar chmo.owl
 ```
 
 Files `entities.tsv` and `properties.tsv` are written.
+
+# Run in REPL
+For debugging interactively, make sure `jshell` is available then use:
+
+```sh
+bash mshell.sh
+```

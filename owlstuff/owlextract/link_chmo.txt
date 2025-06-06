@@ -1,1 +1,0 @@
-https://purl.obolibrary.org/obo/chmo.owl
