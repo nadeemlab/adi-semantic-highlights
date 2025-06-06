@@ -56,7 +56,10 @@ class Sanitize {
 
     public static String oneLineText(String s) {
         String pattern = "[^ A-Za-z0-9_\\.\"':<>\\{\\}\\-\\/]";
-        return s.replaceAll(pattern, "");
+        String pattern2 = "\\^\\^xsd:string";
+        String pattern3 = "^\"";
+        String pattern4 = "\"$";
+        return s.replaceAll(pattern2, "").replaceAll(pattern, "").replaceAll(pattern3, "").replaceAll(pattern4, "");
     }
 }
 
@@ -110,8 +113,8 @@ class SkimDefinedItems {
         String crid = c.getShortForm().replace("_", ":");
         String name = assertionWalker.getLabelName(c);
         String machineToken = Sanitize.machineToken(name);
-        String definition = assertionWalker.getDefinition(c);
-    
+        String definition = Sanitize.oneLineText(assertionWalker.getDefinition(c));
+
         HashMap<String, String> row = new HashMap<String, String>();
         row.put("url", url);
         row.put("crid", crid);

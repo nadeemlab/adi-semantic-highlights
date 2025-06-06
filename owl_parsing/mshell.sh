@@ -7,4 +7,4 @@ if [ ! -d "target" ]; then
   exit
 fi
 mvn dependency:build-classpath -DincludeTypes=jar -Dmdep.outputFile=.cp.tmp
-jshell --class-path `cat .cp.tmp`:target/classes:target/owlextract-1.0.jar "$@"
+jshell --class-path `cat .cp.tmp`:target/classes:target/owlextract-0.1.jar "$@"
