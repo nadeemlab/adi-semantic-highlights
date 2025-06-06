@@ -101,7 +101,6 @@ class SkimDefinedItems {
                 elementType = "object property";
             }
             catch(ClassCastException exception2) {
-                System.out.println("Not an owl class or object property: " + e.toString());
             }
         }
         if (c == null || elementType == null) {
