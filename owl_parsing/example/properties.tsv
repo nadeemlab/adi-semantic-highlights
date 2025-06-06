@@ -1,0 +1,57 @@
+Name	Label	Entity	Value type	Related entity	Definitional reference	Definition
+proper_part_of_continuant_at_some_time	proper part of continuant at some time				BFO:0000175	
+is_about	is about				IAO:0000136	A currently primitive relation that relates an information artifact to an entity."en
+has_characteristic	has characteristic				RO:0000053	a relation between an independent continuant the bearer and a specifically dependent continuant the dependent in which the dependent specifically depends on the bearer for its existence"en
+is_specified_input_of	is_specified_input_of				OBI:0000295	A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."en
+characteristic_of_part_of	characteristic of part of				RO:0002314	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+causal_relation_between_processes	causal relation between processes				RO:0002501	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream downstream part of or a container of q.
+has_continuant_part_at_all_times	has continuant part at all times				BFO:0000110	
+role_of	role of				RO:0000081	a relation between a role and an independent continuant the bearer in which the role specifically depends on the bearer for its existence"en
+realized_in_response_to	realized in response to				RO:0009501	r 'realized in response to' s iff r is a realizable e.g. a plant trait such as responsivity to drought s is an environmental stimulus a process and s directly causes the realization of r.
+realizes	realizes				BFO:0000055	
+causally_upstream_of_or_within	causally upstream of or within				RO:0002418	p is 'causally upstream or within' q iff p is causally related to q and the end of p precedes or is coincident with the end of q.
+prevents	prevents				CHMO:0010016	
+participates_in_at_some_time	participates in at some time				BFO:0000056	
+realized_in	realized in				BFO:0000054	
+has_continuant_part_at_some_time	has continuant part at some time				BFO:0000178	
+inheres_in	inheres in				RO:0000052	a relation between a specifically dependent continuant the characteristic and any other entity the bearer in which the characteristic depends on the bearer for its existence."en
+concretizes	concretizes				RO:0000059	A relationship between a specifically dependent continuant and a generically dependent continuant in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant."en
+achieves_planned_objective	achieves_planned_objective				OBI:0000417	This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process."en
+inheres_in	inheres_in				BFO:0000052	
+causally_upstream_of	causally upstream of				RO:0002411	p is causally upstream of q iff p is causally related to q the end of p precedes the end of q and p is not an occurrent part of q.
+has_part	has part				BFO:0000051	a core relation that holds between a whole and its part"en
+objective_achieved_by	objective_achieved_by				OBI:0000833	This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process."en
+has_role	has role				BFO:0000087	
+has_proper_continuant_part_at_some_time	has proper continuant part at some time				BFO:0000174	
+has_participant	has participant				BFO:0000057	
+has_function	has function				RO:0000085	a relation between an independent continuant the bearer and a function in which the function specifically depends on the bearer for its existence"en
+ends_after	ends after				RO:0002086	
+has_proper_occurrent_part	has proper occurrent part				BFO:0000118	
+preceded_by	preceded by				BFO:0000062	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff y < x where  is a function that maps a process to a start point and  is a function that maps a process to an end point."en
+has_participant	has participant				RO:0000057	a relation between a process and a continuant in which the continuant is somehow involved in the process"en
+depends_on	depends on				RO:0002502	
+mitigates	mitigates				CHMO:0010017	
+has_grain	has grain				OBI:0000643	the relation of the cells in the finger of the skin to the finger in which an indeterminate number of grains are parts of the whole by virtue of being grains in a collective that is part of the whole and in which removing one granular part does not nec- essarily damage or diminish the whole. Ontological Whether there is a fixed or nearly fixed number of parts - e.g. fingers of the hand chambers of the heart or wheels of a car - such that there can be a notion of a single one being missing or whether by contrast the number of parts is indeterminate - e.g. cells in the skin of the hand red cells in blood or rubber molecules in the tread of the tire of the wheel of the car."en
+is_specified_output_of	is_specified_output_of				OBI:0000312	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."en
+has_analyte	has analyte				CHMO:0002748	
+has_value_specification	has value specification				OBI:0001938	A relation between an information content entity and a value specification that specifies its value."en
+part_of	part of				BFO:0000050	a core relation that holds between a part and its whole"en
+participates_in	participates in				RO:0000056	a relation between a continuant and a process in which the continuant is somehow involved in the process"en
+causally_related_to	causally related to				RO:0002410	relation that links two events processes states or objects such that one event process state or object a cause contributes to the production of another event process state or object an effect where the cause is partly or wholly responsible for the effect and the effect is partly or wholly dependent on the cause.
+ceases_to_exist_during	ceases to exist during				BFO:0000069	
+has_specified_output	has_specified_output				OBI:0000299	The inverse property of is_specified_output_of"en
+has_function_at_some_time	has function at some time				BFO:0000085	
+proper_part_of_continuant_at_all_times	proper part of continuant at all times				BFO:0000137	
+function_of	function of				RO:0000079	a relation between a function and an independent continuant the bearer in which the function specifically depends on the bearer for its existence"en
+has_role	has role				RO:0000087	a relation between an independent continuant the bearer and a role in which the role specifically depends on the bearer for its existence"en
+precedes	precedes				BFO:0000063	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff x < y where  is a function that maps a process to a start point and  is a function that maps a process to an end point."en
+has_specified_input	has_specified_input				OBI:0000293	The inverse property of is_specified_input_of"en
+has_matrix	has matrix				CHMO:0002883	
+temporally_related_to	temporally related to				RO:0002222	
+causally_downstream_of_or_within	causally downstream of or within				RO:0002427	inverse of causally upstream of or within
+probes_atom	probes_atom				CHMO:0002922	A process p probes_atom n if it has_participant n and its objective o is to determine the energy levels of n.
+has_member	has member				RO:0002351	has member is a mereological relation between a collection and an item.
+begins_to_exist_during	begins to exist during				BFO:0000068	
+is_concretized_as	is concretized as				RO:0000058	A relationship between a generically dependent continuant and a specifically dependent continuant in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants."en
+member_of	member of				RO:0002350	is member of is a mereological relation between a item and a collection.
+causally_downstream_of	causally downstream of				RO:0002404	inverse of upstream of
