@@ -1,6 +1,7 @@
 {
   "name": "adi-semantic-highlights",
   "displayName": "ADI semantic highlights",
+  "publisher": "NadeemLab",
   "description": "Show tooltips and completions for definitions and fields of a relational database schema and ontology.",
   "version": "1.0.0",
   "engines": {
