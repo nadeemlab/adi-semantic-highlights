@@ -3,7 +3,7 @@
   "displayName": "ADI semantic highlights",
   "publisher": "NadeemLab",
   "description": "Show tooltips and completions for definitions and fields of a relational database schema and ontology.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.100.0"
   },
