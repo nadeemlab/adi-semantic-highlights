@@ -9,3 +9,6 @@ vsc-extension-quickstart.md
 **/*.map
 **/*.ts
 **/.vscode-test.*
+owl_parsing/**
+node_modules/**
+images/**

@@ -32,6 +32,10 @@
       }
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nadeemlab/adi-semantic-highlights"
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
