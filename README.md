@@ -1,5 +1,7 @@
 # adi-semantic-highlights
 
+[https://github.com/nadeemlab/adi-semantic-highlights](https://github.com/nadeemlab/adi-semantic-highlights)
+
 This extension provides tooltips and completions from a given specified relational schema. For the purposes of this extension, a schema is:
 - Definitions for entities.
 - Definitions for properties.
