@@ -17,6 +17,9 @@ export class FieldsCompletionItemProvider implements vscode.CompletionItemProvid
   }
 
   provideCompletionItems(document: vscode.TextDocument, position: vscode.Position) {
+    if (vscode.workspace.getConfiguration('disableADISchemaHighlight').get('disableFunctionality')) {
+      return null;
+    }
     for (const location of [Location.previous, Location.current]) {
       const match = this._getFullThingWordAndFields(document, position, location);
       if (match.fullWord !== null) {

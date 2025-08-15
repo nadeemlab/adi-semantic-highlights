@@ -102,7 +102,6 @@ export class SchemaLoader {
           firstLine = false;
           continue;
         }
-        if (tableName == "entities") { console.log(row)}
         if (row.length != parsed[0].length) {
           continue;
         }
@@ -134,7 +133,7 @@ export class SchemaLoader {
       for (const row of rows2) {
         const card = this._makeDefinitionCard(row, 'property')
         if (this._hasKey(definitionCard(card.machineToken))) {
-          console.log('When registering properties, encountered already-existing entity key: ' + definitionCard(card.machineToken))
+          console.log('When registering *properties*, encountered already-existing *entity* key: ' + definitionCard(card.machineToken))
         } else {
           this.workspaceState.update(definitionCard(card.machineToken), card)
         }

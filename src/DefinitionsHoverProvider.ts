@@ -13,6 +13,9 @@ export class DefinitionsHoverProvider implements vscode.HoverProvider {
   }
 
   provideHover(document: vscode.TextDocument, position: vscode.Position) {
+    if (vscode.workspace.getConfiguration('disableADISchemaHighlight').get('disableFunctionality')) {
+      return null;
+    }
     const range = document.getWordRangeAtPosition(position);
     const word = document.getText(range);
     const card = this._lookupDefinitionCard(word);

@@ -19,7 +19,18 @@
         "command": "adi-semantic-highlights.select-schema",
         "title": "Select schema definitions source file"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Disable ADI Schema Highlight",
+      "type": "object",
+      "properties": {
+        "disableADISchemaHighlight.disableFunctionality": {
+          "type": "boolean",
+          "default": false,
+          "description": "Disable all schema definition hover tooltips and text completions."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

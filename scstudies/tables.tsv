@@ -1,0 +1,31 @@
+Name	Label	Filename	Entity
+study	Study	study.tsv	Investigation
+research_professional	Research professional	research_professional.tsv	Research professional
+study_contact_person	Study contact person	study_contact_person.tsv	Study contact person
+study_component	Study component	study_component.tsv	Study component
+publication	Publication	publication.tsv	Publication
+author	Author	author.tsv	Author
+subject	Subject	subject.tsv	Study subject
+diagnosis	Diagnosis	diagnosis.tsv	Diagnosis event
+diagnostic_selection_criterion	Diagnostic selection criterion	diagnostic_selection_criterion.tsv	Diagnostic selection criterion
+intervention	Intervention	intervention.tsv	Intervention
+specimen_collection_study	Specimen collection study	specimen_collection_study.tsv	Biospecimen collection study
+specimen_collection_process	Specimen collection process	specimen_collection_process.tsv	Biospecimen collection process
+histology_assessment_process	Histology assessment process	histology_assessment_process.tsv	Histology assessment process
+specimen_measurement_study	Specimen measurement study	specimen_measurement_study.tsv	Biospecimen data measurement study
+specimen_data_measurement_process	Specimen data measurement process	specimen_data_measurement_process.tsv	Biospecimen data measurement process
+data_file	Data file	data_file.tsv	Data file
+histological_structure	Histological structure	histological_structure.tsv	Histological structure
+shape_file	Shape file	shape_file.tsv	Coordinate shape specification
+plane_coordinates_reference_system	Plane coordinates reference system	plane_coordinates_reference_system.tsv	Plane coordinates reference system
+histological_structure_identification	Histological structure identification	histological_structure_identification.tsv	Histological structure identification process
+chemical_species	Chemical species	chemical_species.tsv	Chemical species
+expression_quantification	Expression quantification	expression_quantification.tsv	Quantification of chemical target expression
+biological_marking_system	Biological marking system	biological_marking_system.tsv	Biological marking system
+data_analysis_study	Data analysis study	data_analysis_study.tsv	Data analysis study
+cell_phenotype	Cell phenotype	cell_phenotype.tsv	Cell phenotype
+cell_phenotype_criterion	Cell phenotype criterion	cell_phenotype_criterion.tsv	Cell phenotype criterion
+feature_specification	Feature specification	feature_specification.tsv	Feature specification
+feature_specifier	Feature specifier	feature_specifier.tsv	Feature specifier
+quantitative_feature_value	Quantitative feature value	quantitative_feature_value.tsv	Quantitative feature derivation process
+two_cohort_feature_association_test	Two-cohort feature association test	two_cohort_feature_association_test.tsv	Two-cohort feature association test

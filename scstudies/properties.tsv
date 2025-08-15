@@ -1,0 +1,47 @@
+Name	Label	Entity	Value type	Related entity	Definitional reference	Definition
+assay_performer	Assay performer	Assay	String		OBI:0001950	The person or agent who performs a given assay.
+base64_file_contents	Base64 file contents	File	String		NCIT:C47879	The Base64-encoded ASCII character string serialization of the file contents byte string. The encoding is specified by RFC 4648.
+biospecimen_age_at_event	Biospecimen age at event	Biospecimen event	String		PATO:0000011	The amount of time between the inception of a given biospecimen (typically extraction) and the given event. Typically denominated in number of days.
+biospecimen_analyzed	Biospecimen analyzed	Analysis process	Entity	Biospecimen		The biospecimen analyzed by an analysis process, in case the subject is a biospecimen.
+biospecimen_storage_location	Biospecimen storage location	Biospecimen collection study	String		OBI:0302893	The location of storage of biospecimens during the period after collection but before measurement or analysis.
+cause_of_death	Cause of death	Study subject	String		OPMI:0000543	The most significant causative factor in the death of a given subject. Often but not always pertinent to the study of which the subject is a part, in the case of disease studies.
+cell_phenotype_criterion_marker	Cell phenotype criterion marker	Cell phenotype criterion	Entity	Chemical species		The chemical species whose presence or absence is the substance of a given cell phenotype criterion.
+cell_phenotype_criterion_polarity	Cell phenotype criterion polarity	Cell phenotype criterion	String			The value (typically positive or negative) stipulated by a given cell phenotype criterion.
+cell_phenotype_symbol	Cell phenotype symbol	Cell phenotype	String			A symbol string, not necessarily intended for verbalization in long-form speech or text, meant to summarize the intended meaning of a given cell phenotype. This is potentially an abbreviation of the full name.
+chemical_species_quantified	Chemical species quantified	Quantification of chemical target expression	Entity	Chemical species		The chemical species which is quantified by a given process.
+chemical_species_symbol	Chemical species symbol	Chemical species	String			A symbol string representation of the chemical species, or possibly a gene class of closely-related species (for example, BCL2 for a certain DNA segment, the corresponding mRNA molecule, and the corresponding protein product).
+component_study	Component study	Study component	Entity	Investigation		The component study of the component relation.
+condition_considered	Condition considered	Diagnosis event	String		BFO:0000016	The condition considered during a process of diagnosis.
+coordinate_system_orientation_specification	Coordinate system orientation specification	Plane coordinates reference system	String		PATO:0000133	The description of the direction, on the object or area of interest, intended to correspond to the first coordinate positive axis, plus a description of the choice of which of the two orthogonal directions is intended to correspond to the second coordinate positive axis.
+coordinate_system_reference_point	Coordinate system reference point	Plane coordinates reference system	String		NCIT:C45793	The description of a single point, on the object or area of focus, which serves as a reference point for establishing an orthogonal (Euclidean similarity) coordinate system.
+coordinate_system_reference_point_1	Coordinate system reference point 1	Plane coordinates reference system	Float		IAO:0000402	The intended first coordinate value of the coordinate-space point corresponding to the reference point. For orthogonal (Euclidean similarity) coordinate systems.
+coordinate_system_reference_point_2	Coordinate system reference point 2	Plane coordinates reference system	Float		IAO:0000402	The intended second coordinate value of the coordinate-space point corresponding to the reference point. For orthogonal (Euclidean similarity) coordinate systems.
+coordinate_system_unit	Coordinate system unit	Plane coordinates reference system	String		UO:0000001	A representation (e.g. 10 micrometers) of the length unit intended to correspond to the displacement in the coordinate space by the value 1. For orthogonal (Euclidean similarity) coordinate systems.
+data_file_generation_source_process	Data file generation source process	Data file	Entity	Biospecimen data measurement process		The measurement process which produced a given data file.
+date_of_birth	Date of birth	Study subject	Entity	Event date	UBERON:0035946	The date of inception, in the case of a biological subject.
+date_of_conclusion	Date of conclusion	Continuant	Entity	Event date	NCIT:C68617	The final date of the continuant's existence.
+date_of_death	Date of death	Study subject	Entity	Event date	UBERON:0035944	The date of conclusion, in the case of a biological subject.
+date_of_diagnosis	Date of diagnosis	Diagnosis event	Entity	Event date	NCIT:C164339	The date on which a diagnosis was made.
+date_of_inception	Date of inception	Continuant	Entity	Event date	NCIT:C68616	The initial date of the continuant's existence.
+date_of_intervention	Date of intervention	Intervention	Entity	Event date	NCIT:C80454	The date that a specific intervention was performed.
+date_of_publication	Date of publication	Publication	Entity	Event date		The date on which the publication process was completed.
+diagnosis_result	Diagnosis result	Diagnosis result	Entity		OGMS:0000073	The empirical claim about a subject supported by an act of diagnosis (often epistemologically complex and multi-factorial). May be 'positive' or 'negative' for disease presence, or an indication of disease subtype presence (e.g. 'triple-negative' for the disease 'breast cancer').
+document_structure_class	Document structure class	Publication	String		IAO:0000310	See IAO.
+extracted_subspecimen	Extracted subspecimen	Biospecimen collection process	Entity	Biospecimen		The subspecimen extracted during a given biospecimen collection process.
+expression_quantity	Expression quantity	Quantification of chemical target expression	Float		NCIT:C25256	A real (dimensionless) numerical value representing an amount with respect to some unit.
+feature_subject	Feature subject	Quantitative feature derivation process	Entity			The entity that was subjected to the feature derivation or quantification process.
+feature_value	Feature value	Quantitative feature derivation process	Float			The quantity resulting from the quantification process.
+histological_structure_identification_performer	Histological structure identification performer	Histological structure identification process	String		OBI:0001950	The person who identified a histological structure or operated software making such an identification.
+institution_of_activity	Institution of activity	Investigation	Entity	Institution	OBI:0000828	The primary institution in which the investigation is carried out, which provides resources for the investigation, or which directs the conduct of the investigation.
+internet_reference	Internet reference	Publication	String		SIO:000811	A reference, typically a URL and often a DOI-formatted URL, that is issued by the publisher and refers to an at least partial digital representation of the publication.
+marking_antibody	Marking antibody	Biological marking system	String			The antibody used in the given marker/staining system.
+maximal_date_of_evidence	Maximal date of evidence	Evaluation	Entity	Event date		For an evaluation of activity or condition based on evidential factors of consideration, the most recent known date of creation of the evidence. If this date is accurately known, events after this date cannot bias the evaluation. For example, for a diagnosis based on a blood sample, X-rays, and a biopsy, if the blood sample was taken last, then the date of this sample is the maximal date of evidence.
+mechanism_of_target_marking	Mechanism of target marking	Biological marking system	String		OBI:0003146	The mechanism by which the given marker system renders the target antigen observable.
+primary_study	Primary study	Study component	Entity	Investigation		The primary study of the component relation.
+shape_specification_file_format	Shape specification file format	Coordinate shape specification	String			The documented file format for a given shape specification file.
+source_biospecimen	Source biospecimen	Biospecimen collection process	Entity	Biospecimen		The biospecimen from which a subspecimen was extracted during the given specimen collection process.
+specification_of_quantified_feature	Specification of quantified feature	Quantitative feature derivation process	Entity	Feature specification		The specification for feature derivation which was used to carry out a given instance of quantification.
+study_specifier	Study specifier	Investigation	Entity	Specifier		A short name for the study meant mainly for human-readable reference which disambiguates against other studies in the context of a single database instance.
+subject_of_quantification	Subject of quantification	Quantification of chemical target expression	Entity	Histological structure		The histological structure which is the domain for the given expression quantification process.
+subspecimen_extraction_site	Subspecimen extraction site	Biospecimen collection process	String		BFO:0000029	The location on the source specimen from which a subspecimen is extracted.
+test_probability_value	Test probability value	Two-cohort feature association test	Float		OBI:0000175	See OBI.
