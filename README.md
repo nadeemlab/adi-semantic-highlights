@@ -10,7 +10,7 @@ The schema framework is described in detail here: [https://adiframework.com](htt
 
 ## Features
 
-The tooltips show **full names** and **definitions**, as well as links to external ontologies if annotated in the schema. For example, in the below a link is provided to [OBI:0000066](https://ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0000066).
+The tooltips show **full names**, possibly **aliases**, and **definitions**, as well as links to external ontologies if annotated in the schema. For example, in the below a link is provided to [OBI:0000066](https://ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0000066).
 
 ![hovering](doc/hovers.gif)
 
