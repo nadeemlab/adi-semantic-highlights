@@ -2,7 +2,7 @@
   "name": "adi-semantic-highlights",
   "displayName": "ADI semantic highlights",
   "description": "Show tooltips and completions for definitions and fields of a relational database schema and ontology.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.100.0"
   },
