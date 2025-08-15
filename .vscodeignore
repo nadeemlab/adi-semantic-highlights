@@ -10,5 +10,4 @@ vsc-extension-quickstart.md
 **/*.ts
 **/.vscode-test.*
 owl_parsing/**
-node_modules/**
 images/**
