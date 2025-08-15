@@ -1,4 +1,4 @@
-This source code contains a tool to extract entity/property names and definitions from an OWL ontology.
+This source code contains an experimental tool to extract entity/property names and definitions from an OWL ontology.
 
 # Build the CLI program
 
