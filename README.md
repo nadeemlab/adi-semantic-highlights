@@ -18,8 +18,13 @@ Text completions are available for the **vocabulary** of the schema, and specifi
 
 ![completion](doc/completion.gif)
 
+Use the command palette (may be `CMD Shift P` or `Ctrl Shift P`) to select the scheme source file or files.
 
 ![selectschema](doc/select_schema.gif)
+
+Two formats are supported:
+1. SQLite database. (Example: [scstudies.sqlite](https://github.com/nadeemlab/adi-semantic-highlights/raw/refs/heads/main/scstudies.sqlite))
+2. TSV files in a subdirectory. (Example: [scstudies/](https://github.com/nadeemlab/adi-semantic-highlights/tree/main/scstudies))
 
 ## Settings
 
